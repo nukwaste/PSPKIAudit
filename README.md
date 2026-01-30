@@ -66,7 +66,7 @@ Any misconfigurations (ESC1-8) will appear as properties on the CA/template resu
 
 If you want to change the groups/users used to test enrollment/access control, modify the `$CommonLowprivPrincipals` regex at the top of `Invoke-PKIAudit.ps1`
 
-If you want to export all CA information to a csv, run: `Get-AuditCertificateAuthority [-CAComputerName CA.DOMAIN.COM | -CAName X-Y-Z] | Export-Csv -NoTypeInformation CAs.csv`
+If you want to export all CA information to a csv, run: `Get-AuditCertificateAuthority -CAComputerName CA.DOMAIN.COM  -CAName X-Y-Z] | Export-Csv -NoTypeInformation CAs.csv`
 
 If you want to export ALL published template information to a csv (not just vulnerable templates), run: `Get-AuditCertificateTemplate [-CAComputerName CA.DOMAIN.COM | -CAName X-Y-Z] | Export-Csv -NoTypeInformation templates.csv`
 
